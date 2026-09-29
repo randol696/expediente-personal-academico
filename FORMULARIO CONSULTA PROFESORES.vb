@@ -257,7 +257,7 @@ Public Class FORMULARIO_CONSULTA_PROFESORES
 
     Private Sub BtnINGRESARDATOSPROFESORES_Click(sender As Object, e As EventArgs) Handles btnINGRESAR.Click
         ' 1. Conexión limpia a la base de datos Access
-        Dim conexion As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\PROYECTO BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb")
+        Dim conexion As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb")
 
         ' 2. Consulta SQL con exactamente 13 campos y 13 signos (?)
         Dim sql As String = "INSERT INTO [CONSULTA DE DATOS DE LOS PROFESORES] " &

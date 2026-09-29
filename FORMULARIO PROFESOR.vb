@@ -19,7 +19,7 @@ Public Class FORMULARIO_PROFESOR
     Dim datosValidos As String
     Private Sub btnGUARDAR_Click(sender As Object, e As EventArgs) Handles btnGUARDAR.Click
         ' 1. Conexión limpia a la base de datos Access
-        Dim conexion As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\PROYECTO BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb")
+        Dim conexion As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb")
 
         ' 2. Consulta SQL corregida (Se eliminaron comas dobles y se alinearon exactamente 14 campos)
         Dim sql As String = "INSERT INTO [INGRESO DE DATOS DE LOS PROFESORES] " &
@@ -400,7 +400,7 @@ Public Class FORMULARIO_PROFESOR
 
     Private Sub FORMULARIO_PROFESOR_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            con.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\PROYECTO BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
+            con.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
             con.Open()
             MsgBox("CONECTADA CORRECTAMENTE", MsgBoxStyle.Information, "AVISO")
         Catch ex As Exception
@@ -545,7 +545,7 @@ Public Class FORMULARIO_PROFESOR
 
     Private Sub btnOTROSDATOSPROFESOR_Click(sender As Object, e As EventArgs) Handles btnOTROS.Click
         ' 1. Conexión limpia a la base de datos Access
-        Dim conexion As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\PROYECTO BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb")
+        Dim conexion As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb")
 
         ' 2. Consulta SQL corregida (Se eliminaron comas dobles y se alinearon exactamente 14 campos)
         Dim sql As String = "INSERT INTO [INGRESO DE DATOS DE LOS PROFESORES] " &

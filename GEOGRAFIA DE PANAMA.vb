@@ -82,7 +82,7 @@ Public Class GEOGRAFIA_DE_PANAMA
 
     Private Sub COMUNICACIÓN_ORAL_Y_ESCRITA_001_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            con.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\PROYECTO BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
+            con.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
             con.Open()
             MsgBox("CONECTADA CORRECTAMENTE", MsgBoxStyle.Information, "AVISO")
         Catch ex As Exception
@@ -106,7 +106,7 @@ Public Class GEOGRAFIA_DE_PANAMA
         txtPROFE.Text = MDIParent4.profesor(posicion)
         txtPUNTUACION.Text = MDIParent4.puntuacion15(posicion)
         txtNOTA.Text = MDIParent4.nota15(pos)
-        Dim rutaConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\PROYECTO BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
+        Dim rutaConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
 
         ' 1. SENTENCIA SQL: 6 columnas declaradas y exactamente 6 signos de interrogación
         Dim sql As String = "INSERT INTO [NOTA DEL ESTUDIANTE COMUNICACIÓN ORAL Y ESCRITA 001] " &

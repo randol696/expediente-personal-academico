@@ -169,7 +169,7 @@ Public Class Form8
 
     Private Sub Form8_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            con.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\PROYECTO BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
+            con.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
             con.Open()
             MsgBox("CONECTADA CORRECTAMENTE", MsgBoxStyle.Information, "AVISO")
         Catch ex As Exception

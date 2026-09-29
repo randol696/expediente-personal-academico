@@ -7,7 +7,7 @@ Module Module2
 
     Sub enlace()
         Try
-            conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO.accdb"
+            conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO.accdb"
             conexion.Open()
             estado = "conectado "
         Catch ex As Exception

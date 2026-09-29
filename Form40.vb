@@ -581,7 +581,7 @@ Public Class Form40
     End Sub
 
     Private Sub btnVALIDAR_Click(sender As Object, e As EventArgs) Handles btnVERIFICAR.Click
-        Dim cadenaConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\PROYECTO BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
+        Dim cadenaConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
         Dim consulta As String = "SELECT COUNT(*) FROM [PROMEDIO DE LOS ESTUDIANTES] WHERE CEDULA = @CEDULA"
 
         Using conexion As New OleDbConnection(cadenaConexion)
@@ -638,7 +638,7 @@ Public Class Form40
 
     Private Sub BtnIngresar_Click(sender As Object, e As EventArgs) Handles BtnIngresar.Click
         ' Ruta y proveedor de la base de datos
-        Dim rutaConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\PROYECTO BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
+        Dim rutaConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
 
         ' SENTENCIA SQL CORREGIDA: 11 columnas y exactamente 11 signos de interrogación
         Dim sqlInsert As String = "INSERT INTO [PROMEDIO DE LOS ESTUDIANTES] " &

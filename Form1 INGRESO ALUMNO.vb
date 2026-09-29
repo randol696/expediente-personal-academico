@@ -322,7 +322,7 @@ Public Class Form1_INGRESO_ALUMNO
     Private Sub Form1_INGRESO_ALUMNO_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
 
-            con.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\PROYECTO BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
+            con.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb"
             con.Open()
             MsgBox("CONECTADA CORRECTAMENTE", MsgBoxStyle.Information, "AVISO")
         Catch ex As Exception
@@ -463,7 +463,7 @@ Public Class Form1_INGRESO_ALUMNO
 
     Private Sub BtnIngresar_Click(sender As Object, e As EventArgs) Handles btnPREGUARDAR.Click
         ' 1. Conexión y Consulta SQL limpia con exactamente 21 signos de interrogación (?)
-        Dim conexion As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\PROYECTO BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb")
+        Dim conexion As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb")
 
         Dim sql As String = "INSERT INTO [INGRESO DE DATOS DE LOS ESTUDIANTES] " &
                 "(NÚMERO, [PRIMER NOMBRE], [SEGUNDO NOMBRE], [APELLIDO PATERNO], [APELLIDO MATERNO], CÉDULA, CARRERA, EDAD, [FECHA DE NACIMIENTO], DIRECCIÓN, DISTRITO, CORREGIMIENTO, " &
@@ -814,7 +814,7 @@ Public Class Form1_INGRESO_ALUMNO
 
     Private Sub btnOTROS_Click(sender As Object, e As EventArgs) Handles btnOTROS.Click
         ' 1. Conexión y Consulta SQL limpia con exactamente 21 signos de interrogación (?)
-        Dim conexion As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\FS\Documents\PROYECTO BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb")
+        Dim conexion As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & My.Application.Info.DirectoryPath & "\BASE DE DATOS SISTEMA DE EXPEDIENTE PERSONAL Y ACADEMICO PRACTICA PROFESIONAL CARLOS JESUS MORENO.accdb")
 
         Dim sql As String = "INSERT INTO [INGRESO DE DATOS DE LOS ESTUDIANTES] " &
                 "(NÚMERO, [PRIMER NOMBRE], [SEGUNDO NOMBRE], [APELLIDO PATERNO], [APELLIDO MATERNO], CÉDULA, CARRERA, EDAD, [FECHA DE NACIMIENTO], DIRECCIÓN, DISTRITO, CORREGIMIENTO, " &
