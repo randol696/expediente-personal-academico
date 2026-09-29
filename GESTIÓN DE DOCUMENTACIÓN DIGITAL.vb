@@ -1,0 +1,3 @@
+﻿Public Class GESTIÓN_DE_DOCUMENTACIÓN_DIGITAL
+
+End Class

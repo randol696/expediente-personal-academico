@@ -1,0 +1,3 @@
+﻿Public Class CONFIGURACIÓN_DE_REDES_DE_ÁREA_LOCAL__LAN_
+
+End Class

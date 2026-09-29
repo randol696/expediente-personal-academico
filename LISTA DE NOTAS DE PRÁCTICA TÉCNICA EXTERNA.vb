@@ -1,0 +1,3 @@
+﻿Public Class LISTA_DE_NOTAS_DE_PRÁCTICA_TÉCNICA_EXTERNA
+
+End Class

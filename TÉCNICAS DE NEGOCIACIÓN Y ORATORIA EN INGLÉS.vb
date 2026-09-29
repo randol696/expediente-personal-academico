@@ -1,0 +1,3 @@
+﻿Public Class TÉCNICAS_DE_NEGOCIACIÓN_Y_ORATORIA_EN_INGLÉS
+
+End Class

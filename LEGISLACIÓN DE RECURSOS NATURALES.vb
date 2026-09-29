@@ -1,0 +1,3 @@
+﻿Public Class LEGISLACIÓN_DE_RECURSOS_NATURALES
+
+End Class

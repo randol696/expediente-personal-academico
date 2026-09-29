@@ -1,0 +1,3 @@
+﻿Public Class TÉCNICAS_DE_INSPECCIÓN_DE_SEGURIDAD
+
+End Class

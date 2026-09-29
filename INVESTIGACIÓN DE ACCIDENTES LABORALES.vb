@@ -1,0 +1,3 @@
+﻿Public Class INVESTIGACIÓN_DE_ACCIDENTES_LABORALES
+
+End Class

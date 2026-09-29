@@ -1,0 +1,3 @@
+﻿Public Class LISTA_DE_PROFESOR_MEDICINA_DEL_TRABAJO
+
+End Class

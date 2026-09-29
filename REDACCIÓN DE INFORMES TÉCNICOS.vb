@@ -1,0 +1,3 @@
+﻿Public Class REDACCIÓN_DE_INFORMES_TÉCNICOS
+
+End Class

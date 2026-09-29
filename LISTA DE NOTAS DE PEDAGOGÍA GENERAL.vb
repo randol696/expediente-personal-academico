@@ -1,0 +1,3 @@
+﻿Public Class LISTA_DE_NOTAS_DE_PEDAGOGÍA_GENERAL
+
+End Class

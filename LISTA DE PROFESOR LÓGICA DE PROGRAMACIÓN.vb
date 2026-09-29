@@ -1,0 +1,3 @@
+﻿Public Class LISTA_DE_PROFESOR_LÓGICA_DE_PROGRAMACIÓN
+
+End Class

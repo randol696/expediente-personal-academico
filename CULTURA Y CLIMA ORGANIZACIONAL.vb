@@ -1,0 +1,3 @@
+﻿Public Class CULTURA_Y_CLIMA_ORGANIZACIONAL
+
+End Class

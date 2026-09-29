@@ -1,0 +1,3 @@
+﻿Public Class TÉCNICAS_DE_COMUNICACIÓN_EFECTIVA
+
+End Class

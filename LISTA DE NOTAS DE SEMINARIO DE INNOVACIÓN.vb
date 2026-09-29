@@ -1,0 +1,3 @@
+﻿Public Class LISTA_DE_NOTAS_DE_SEMINARIO_DE_INNOVACIÓN
+
+End Class

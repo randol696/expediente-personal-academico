@@ -1,0 +1,3 @@
+﻿Public Class SEMINARIO_DE_ACTUALIZACIÓN_CONTABLE
+
+End Class

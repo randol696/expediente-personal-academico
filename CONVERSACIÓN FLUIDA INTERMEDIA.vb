@@ -1,0 +1,3 @@
+﻿Public Class CONVERSACIÓN_FLUIDA_INTERMEDIA
+
+End Class

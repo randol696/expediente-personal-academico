@@ -1,0 +1,3 @@
+﻿Public Class PRIMEROS_AUXILIOS_DE_EMERGENCIA
+
+End Class

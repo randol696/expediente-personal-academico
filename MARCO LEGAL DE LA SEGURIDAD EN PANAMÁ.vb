@@ -1,0 +1,3 @@
+﻿Public Class MARCO_LEGAL_DE_LA_SEGURIDAD_EN_PANAMÁ
+
+End Class

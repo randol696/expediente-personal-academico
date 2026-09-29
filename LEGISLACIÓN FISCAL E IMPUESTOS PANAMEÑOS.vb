@@ -1,0 +1,3 @@
+﻿Public Class LEGISLACIÓN_FISCAL_E_IMPUESTOS_PANAMEÑOS
+
+End Class

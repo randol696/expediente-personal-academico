@@ -1,0 +1,3 @@
+﻿Public Class LISTA_DE_NOTAS_DE_RELACIÓN_FAMILIA_CUIDADOR
+
+End Class

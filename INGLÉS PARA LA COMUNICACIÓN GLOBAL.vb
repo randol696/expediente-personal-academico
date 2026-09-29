@@ -1,0 +1,3 @@
+﻿Public Class INGLÉS_PARA_LA_COMUNICACIÓN_GLOBAL
+
+End Class

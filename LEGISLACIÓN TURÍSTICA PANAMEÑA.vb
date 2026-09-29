@@ -1,0 +1,3 @@
+﻿Public Class LEGISLACIÓN_TURÍSTICA_PANAMEÑA
+
+End Class

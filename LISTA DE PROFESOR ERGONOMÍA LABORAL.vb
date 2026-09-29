@@ -1,0 +1,3 @@
+﻿Public Class LISTA_DE_PROFESOR_ERGONOMÍA_LABORAL
+
+End Class

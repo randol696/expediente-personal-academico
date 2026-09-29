@@ -1,0 +1,3 @@
+﻿Public Class GESTIÓN_Y_TRATAMIENTO_DE_RESIDUOS_SÓLIDOS
+
+End Class

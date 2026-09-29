@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENODataSet" targetNamespace="http://tempuri.org/BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENODataSet.xsd" xmlns:mstns="http://tempuri.org/BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENODataSet.xsd" xmlns="http://tempuri.org/BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENODataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" PropertyReference="ApplicationSettings.WindowsApp1.My.MySettings.GlobalReference.Default.BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ACCESO ACADEMICOTableAdapter" GeneratorDataComponentClassName="ACCESO_ACADEMICOTableAdapter" Name="ACCESO ACADEMICO" UserDataComponentName="ACCESO ACADEMICOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" DbObjectName="ACCESO ACADEMICO" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [NOMBRE DE USUARIO], CONTRASEÑA FROM [ACCESO ACADEMICO]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ACCESO ADMINISTRADORTableAdapter" GeneratorDataComponentClassName="ACCESO_ADMINISTRADORTableAdapter" Name="ACCESO ADMINISTRADOR" UserDataComponentName="ACCESO ADMINISTRADORTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" DbObjectName="ACCESO ADMINISTRADOR" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [NOMBRE DE USUARIO], CONTRASEÑA FROM [ACCESO ADMINISTRADOR]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CONSULTA DE DATOS DE LOS ESTUDIANTESTableAdapter" GeneratorDataComponentClassName="CONSULTA_DE_DATOS_DE_LOS_ESTUDIANTESTableAdapter" Name="CONSULTA DE DATOS DE LOS ESTUDIANTES" UserDataComponentName="CONSULTA DE DATOS DE LOS ESTUDIANTESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" DbObjectName="CONSULTA DE DATOS DE LOS ESTUDIANTES" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CÉDULA, NOMBRE, APELLIDO, EDAD, [FECHA DE NACIMIENTO], GÉNERO, CARRERA, [PAÍS DE PROCEDENCIA], [PROVINCIA O COMARCA], DISTRITO, CORREGIMIENTO, DIRECCIÓN, [COLEGIO SECUNDARIO], BACHILLER, ESCUELA, [CORREO ELECTRÓNICO], TELÉFONO FROM [CONSULTA DE DATOS DE LOS ESTUDIANTES]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CONSULTA DE DATOS DE LOS PROFESORESTableAdapter" GeneratorDataComponentClassName="CONSULTA_DE_DATOS_DE_LOS_PROFESORESTableAdapter" Name="CONSULTA DE DATOS DE LOS PROFESORES" UserDataComponentName="CONSULTA DE DATOS DE LOS PROFESORESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" DbObjectName="CONSULTA DE DATOS DE LOS PROFESORES" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CÉDULA, NOMBRE, APELLIDO, EDAD, GÉNERO, [PAÍS DE PROCEDENCIA], [PROVINCIA O COMARCA], CURSO, TELÉFONO, [CORREO ELECTRÓNICO] FROM [CONSULTA DE DATOS DE LOS PROFESORES]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="INGRESO DE DATOS DE LOS ESTUDIANTESTableAdapter" GeneratorDataComponentClassName="INGRESO_DE_DATOS_DE_LOS_ESTUDIANTESTableAdapter" Name="INGRESO DE DATOS DE LOS ESTUDIANTES" UserDataComponentName="INGRESO DE DATOS DE LOS ESTUDIANTESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" DbObjectName="INGRESO DE DATOS DE LOS ESTUDIANTES" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NÚMERO, NOMBRE, APELLIDO, CÉDULA, EDAD, [FECHA DE NACIMIENTO], GÉNERO, CARRERA, [PAÍS DE PROCEDENCIA], [PROVINCIA O COMARCA], DISTRITO, CORREGIMIENTO, DIRECCIÓN, [COLEGIO SECUNDARIO], BACHILLER, ESCUELA, [CORREO ELECTRÓNICO], TELÉFONO FROM [INGRESO DE DATOS DE LOS ESTUDIANTES]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="INGRESO DE DATOS DE LOS PROFESORESTableAdapter" GeneratorDataComponentClassName="INGRESO_DE_DATOS_DE_LOS_PROFESORESTableAdapter" Name="INGRESO DE DATOS DE LOS PROFESORES" UserDataComponentName="INGRESO DE DATOS DE LOS PROFESORESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" DbObjectName="INGRESO DE DATOS DE LOS PROFESORES" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CARNET, NOMBRE, APELLIDO, CÉDULA, EDAD, GÉNERO, CURSO, [PAÍS DE PROCEDENCIA], [PROVINCIA O COMARCA], [CORREO ELECTRÓNICO], TELÉFONO FROM [INGRESO DE DATOS DE LOS PROFESORES]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NOTA DEL ESTUDIANTE COMUNICACIÓN ORAL Y ESCRITA 001TableAdapter" GeneratorDataComponentClassName="NOTA_DEL_ESTUDIANTE_COMUNICACIÓN_ORAL_Y_ESCRITA_001TableAdapter" Name="NOTA DEL ESTUDIANTE COMUNICACIÓN ORAL Y ESCRITA 001" UserDataComponentName="NOTA DEL ESTUDIANTE COMUNICACIÓN ORAL Y ESCRITA 001TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" DbObjectName="NOTA DEL ESTUDIANTE COMUNICACIÓN ORAL Y ESCRITA 001" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [NOMBRE DEL CURSO], PERIODO, [NOMBRE DEL ESTUDIANTE], [APELLIDO DEL ESTUDIANTE], [NÚMERO DE CÉDULA], NOTA FROM [NOTA DEL ESTUDIANTE COMUNICACIÓN ORAL Y ESCRITA 001]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NOTA DEL ESTUDIANTE HISTORIA DE PANAMÁ 019TableAdapter" GeneratorDataComponentClassName="NOTA_DEL_ESTUDIANTE_HISTORIA_DE_PANAMÁ_019TableAdapter" Name="NOTA DEL ESTUDIANTE HISTORIA DE PANAMÁ 019" UserDataComponentName="NOTA DEL ESTUDIANTE HISTORIA DE PANAMÁ 019TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" DbObjectName="NOTA DEL ESTUDIANTE HISTORIA DE PANAMÁ 019" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [NOMBRE DEL CURSO], PERIODO, [NOMBRE DEL ESTUDIANTE], [APELLIDO DEL ESTUDIANTE], [NÚMERO DE CÉDULA], NOTA FROM [NOTA DEL ESTUDIANTE HISTORIA DE PANAMÁ 019]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NOTA DEL ESTUDIANTE INTRODUCCIÓN A LOS AMBIENTES VIRTUALES 003TableAdapter" GeneratorDataComponentClassName="NOTA_DEL_ESTUDIANTE_INTRODUCCIÓN_A_LOS_AMBIENTES_VIRTUALES_003TableAdapter" Name="NOTA DEL ESTUDIANTE INTRODUCCIÓN A LOS AMBIENTES VIRTUALES 003" UserDataComponentName="NOTA DEL ESTUDIANTE INTRODUCCIÓN A LOS AMBIENTES VIRTUALES 003TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" DbObjectName="NOTA DEL ESTUDIANTE INTRODUCCIÓN A LOS AMBIENTES VIRTUALES 003" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [NOMBRE DEL CURSO], PERIODO, [NOMBRE DEL ESTUDIANTE], [APELLIDO DEL ESTUDIANTE], [NÚMERO DE CÉDULA], NOTA FROM [NOTA DEL ESTUDIANTE INTRODUCCIÓN A LOS AMBIENTES VIRTUALES 003]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NOTA DEL ESTUDIANTE OFIMÁTICA 002TableAdapter" GeneratorDataComponentClassName="NOTA_DEL_ESTUDIANTE_OFIMÁTICA_002TableAdapter" Name="NOTA DEL ESTUDIANTE OFIMÁTICA 002" UserDataComponentName="NOTA DEL ESTUDIANTE OFIMÁTICA 002TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" DbObjectName="NOTA DEL ESTUDIANTE OFIMÁTICA 002" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [NOMBRE DEL CURSO], PERIODO, [NOMBRE DEL ESTUDIANTE], [APELLIDO DEL ESTUDIANTE], [NÚMERO DE CÉDULA], NOTA FROM [NOTA DEL ESTUDIANTE OFIMÁTICA 002]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NOTAS ENTORNOS VIRTUALESTableAdapter" GeneratorDataComponentClassName="NOTAS_ENTORNOS_VIRTUALESTableAdapter" Name="NOTAS ENTORNOS VIRTUALES" UserDataComponentName="NOTAS ENTORNOS VIRTUALESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" DbObjectName="NOTAS ENTORNOS VIRTUALES" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NUMERO, NOMBRE, APELLIDO, CEDULA, [1C], [COMUNICACION ORAL Y ESCRITA 001], [OFIMATICA 002], [INTRODUCCION A LOS AMBIENTES VIRTUALES 003], [HISTORIA DE PANAMA 019] FROM [NOTAS ENTORNOS VIRTUALES]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PROMEDIO DE LOS ESTUDIANTESTableAdapter" GeneratorDataComponentClassName="PROMEDIO_DE_LOS_ESTUDIANTESTableAdapter" Name="PROMEDIO DE LOS ESTUDIANTES" UserDataComponentName="PROMEDIO DE LOS ESTUDIANTESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENOConnectionString (MySettings)" DbObjectName="PROMEDIO DE LOS ESTUDIANTES" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ESTUDIANTE, [TECNICO SUPERIOR], [ASIGNATURA 1], [ASIGNATURA 2], [ASIGNATURA 3], [ASIGNATURA 4], PROMEDIO, PUNTUACION, NOTA FROM [PROMEDIO DE LOS ESTUDIANTES]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENODataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENODataSet" msprop:Generator_DataSetName="BASE_DE_DATOS_SISTEMA_DE_EXPEDIENTE_PERSONAL_Y_ACADEMICO_PRACTICA_PROFESIONAL_CARLOS_JESUS_MORENODataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ACCESO_x0020_ACADEMICO" msprop:Generator_RowEvHandlerName="ACCESO_ACADEMICORowChangeEventHandler" msprop:Generator_RowDeletedName="ACCESO_ACADEMICORowDeleted" msprop:Generator_RowDeletingName="ACCESO_ACADEMICORowDeleting" msprop:Generator_RowEvArgName="ACCESO_ACADEMICORowChangeEvent" msprop:Generator_TablePropName="ACCESO_ACADEMICO" msprop:Generator_RowChangedName="ACCESO_ACADEMICORowChanged" msprop:Generator_RowChangingName="ACCESO_ACADEMICORowChanging" msprop:Generator_TableClassName="ACCESO_ACADEMICODataTable" msprop:Generator_RowClassName="ACCESO_ACADEMICORow" msprop:Generator_TableVarName="tableACCESO_ACADEMICO" msprop:Generator_UserTableName="ACCESO ACADEMICO">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ACCESO_x0020_ADMINISTRADOR" msprop:Generator_RowEvHandlerName="ACCESO_ADMINISTRADORRowChangeEventHandler" msprop:Generator_RowDeletedName="ACCESO_ADMINISTRADORRowDeleted" msprop:Generator_RowDeletingName="ACCESO_ADMINISTRADORRowDeleting" msprop:Generator_RowEvArgName="ACCESO_ADMINISTRADORRowChangeEvent" msprop:Generator_TablePropName="ACCESO_ADMINISTRADOR" msprop:Generator_RowChangedName="ACCESO_ADMINISTRADORRowChanged" msprop:Generator_RowChangingName="ACCESO_ADMINISTRADORRowChanging" msprop:Generator_TableClassName="ACCESO_ADMINISTRADORDataTable" msprop:Generator_RowClassName="ACCESO_ADMINISTRADORRow" msprop:Generator_TableVarName="tableACCESO_ADMINISTRADOR" msprop:Generator_UserTableName="ACCESO ADMINISTRADOR">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CONSULTA_x0020_DE_x0020_DATOS_x0020_DE_x0020_LOS_x0020_ESTUDIANTES" msprop:Generator_RowEvHandlerName="CONSULTA_DE_DATOS_DE_LOS_ESTUDIANTESRowChangeEventHandler" msprop:Generator_RowDeletedName="CONSULTA_DE_DATOS_DE_LOS_ESTUDIANTESRowDeleted" msprop:Generator_RowDeletingName="CONSULTA_DE_DATOS_DE_LOS_ESTUDIANTESRowDeleting" msprop:Generator_RowEvArgName="CONSULTA_DE_DATOS_DE_LOS_ESTUDIANTESRowChangeEvent" msprop:Generator_TablePropName="CONSULTA_DE_DATOS_DE_LOS_ESTUDIANTES" msprop:Generator_RowChangedName="CONSULTA_DE_DATOS_DE_LOS_ESTUDIANTESRowChanged" msprop:Generator_RowChangingName="CONSULTA_DE_DATOS_DE_LOS_ESTUDIANTESRowChanging" msprop:Generator_TableClassName="CONSULTA_DE_DATOS_DE_LOS_ESTUDIANTESDataTable" msprop:Generator_RowClassName="CONSULTA_DE_DATOS_DE_LOS_ESTUDIANTESRow" msprop:Generator_TableVarName="tableCONSULTA_DE_DATOS_DE_LOS_ESTUDIANTES" msprop:Generator_UserTableName="CONSULTA DE DATOS DE LOS ESTUDIANTES">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CONSULTA_x0020_DE_x0020_DATOS_x0020_DE_x0020_LOS_x0020_PROFESORES" msprop:Generator_RowEvHandlerName="CONSULTA_DE_DATOS_DE_LOS_PROFESORESRowChangeEventHandler" msprop:Generator_RowDeletedName="CONSULTA_DE_DATOS_DE_LOS_PROFESORESRowDeleted" msprop:Generator_RowDeletingName="CONSULTA_DE_DATOS_DE_LOS_PROFESORESRowDeleting" msprop:Generator_RowEvArgName="CONSULTA_DE_DATOS_DE_LOS_PROFESORESRowChangeEvent" msprop:Generator_TablePropName="CONSULTA_DE_DATOS_DE_LOS_PROFESORES" msprop:Generator_RowChangedName="CONSULTA_DE_DATOS_DE_LOS_PROFESORESRowChanged" msprop:Generator_RowChangingName="CONSULTA_DE_DATOS_DE_LOS_PROFESORESRowChanging" msprop:Generator_TableClassName="CONSULTA_DE_DATOS_DE_LOS_PROFESORESDataTable" msprop:Generator_RowClassName="CONSULTA_DE_DATOS_DE_LOS_PROFESORESRow" msprop:Generator_TableVarName="tableCONSULTA_DE_DATOS_DE_LOS_PROFESORES" msprop:Generator_UserTableName="CONSULTA DE DATOS DE LOS PROFESORES">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="INGRESO_x0020_DE_x0020_DATOS_x0020_DE_x0020_LOS_x0020_ESTUDIANTES" msprop:Generator_RowEvHandlerName="INGRESO_DE_DATOS_DE_LOS_ESTUDIANTESRowChangeEventHandler" msprop:Generator_RowDeletedName="INGRESO_DE_DATOS_DE_LOS_ESTUDIANTESRowDeleted" msprop:Generator_RowDeletingName="INGRESO_DE_DATOS_DE_LOS_ESTUDIANTESRowDeleting" msprop:Generator_RowEvArgName="INGRESO_DE_DATOS_DE_LOS_ESTUDIANTESRowChangeEvent" msprop:Generator_TablePropName="INGRESO_DE_DATOS_DE_LOS_ESTUDIANTES" msprop:Generator_RowChangedName="INGRESO_DE_DATOS_DE_LOS_ESTUDIANTESRowChanged" msprop:Generator_RowChangingName="INGRESO_DE_DATOS_DE_LOS_ESTUDIANTESRowChanging" msprop:Generator_TableClassName="INGRESO_DE_DATOS_DE_LOS_ESTUDIANTESDataTable" msprop:Generator_RowClassName="INGRESO_DE_DATOS_DE_LOS_ESTUDIANTESRow" msprop:Generator_TableVarName="tableINGRESO_DE_DATOS_DE_LOS_ESTUDIANTES" msprop:Generator_UserTableName="INGRESO DE DATOS DE LOS ESTUDIANTES">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="INGRESO_x0020_DE_x0020_DATOS_x0020_DE_x0020_LOS_x0020_PROFESORES" msprop:Generator_RowEvHandlerName="INGRESO_DE_DATOS_DE_LOS_PROFESORESRowChangeEventHandler" msprop:Generator_RowDeletedName="INGRESO_DE_DATOS_DE_LOS_PROFESORESRowDeleted" msprop:Generator_RowDeletingName="INGRESO_DE_DATOS_DE_LOS_PROFESORESRowDeleting" msprop:Generator_RowEvArgName="INGRESO_DE_DATOS_DE_LOS_PROFESORESRowChangeEvent" msprop:Generator_TablePropName="INGRESO_DE_DATOS_DE_LOS_PROFESORES" msprop:Generator_RowChangedName="INGRESO_DE_DATOS_DE_LOS_PROFESORESRowChanged" msprop:Generator_RowChangingName="INGRESO_DE_DATOS_DE_LOS_PROFESORESRowChanging" msprop:Generator_TableClassName="INGRESO_DE_DATOS_DE_LOS_PROFESORESDataTable" msprop:Generator_RowClassName="INGRESO_DE_DATOS_DE_LOS_PROFESORESRow" msprop:Generator_TableVarName="tableINGRESO_DE_DATOS_DE_LOS_PROFESORES" msprop:Generator_UserTableName="INGRESO DE DATOS DE LOS PROFESORES">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NOTA_x0020_DEL_x0020_ESTUDIANTE_x0020_COMUNICACIÓN_x0020_ORAL_x0020_Y_x0020_ESCRITA_x0020_001" msprop:Generator_RowEvHandlerName="NOTA_DEL_ESTUDIANTE_COMUNICACIÓN_ORAL_Y_ESCRITA_001RowChangeEventHandler" msprop:Generator_RowDeletedName="NOTA_DEL_ESTUDIANTE_COMUNICACIÓN_ORAL_Y_ESCRITA_001RowDeleted" msprop:Generator_RowDeletingName="NOTA_DEL_ESTUDIANTE_COMUNICACIÓN_ORAL_Y_ESCRITA_001RowDeleting" msprop:Generator_RowEvArgName="NOTA_DEL_ESTUDIANTE_COMUNICACIÓN_ORAL_Y_ESCRITA_001RowChangeEvent" msprop:Generator_TablePropName="NOTA_DEL_ESTUDIANTE_COMUNICACIÓN_ORAL_Y_ESCRITA_001" msprop:Generator_RowChangedName="NOTA_DEL_ESTUDIANTE_COMUNICACIÓN_ORAL_Y_ESCRITA_001RowChanged" msprop:Generator_RowChangingName="NOTA_DEL_ESTUDIANTE_COMUNICACIÓN_ORAL_Y_ESCRITA_001RowChanging" msprop:Generator_TableClassName="NOTA_DEL_ESTUDIANTE_COMUNICACIÓN_ORAL_Y_ESCRITA_001DataTable" msprop:Generator_RowClassName="NOTA_DEL_ESTUDIANTE_COMUNICACIÓN_ORAL_Y_ESCRITA_001Row" msprop:Generator_TableVarName="tableNOTA_DEL_ESTUDIANTE_COMUNICACIÓN_ORAL_Y_ESCRITA_001" msprop:Generator_UserTableName="NOTA DEL ESTUDIANTE COMUNICACIÓN ORAL Y ESCRITA 001">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NOTA_x0020_DEL_x0020_ESTUDIANTE_x0020_HISTORIA_x0020_DE_x0020_PANAMÁ_x0020_019" msprop:Generator_RowEvHandlerName="NOTA_DEL_ESTUDIANTE_HISTORIA_DE_PANAMÁ_019RowChangeEventHandler" msprop:Generator_RowDeletedName="NOTA_DEL_ESTUDIANTE_HISTORIA_DE_PANAMÁ_019RowDeleted" msprop:Generator_RowDeletingName="NOTA_DEL_ESTUDIANTE_HISTORIA_DE_PANAMÁ_019RowDeleting" msprop:Generator_RowEvArgName="NOTA_DEL_ESTUDIANTE_HISTORIA_DE_PANAMÁ_019RowChangeEvent" msprop:Generator_TablePropName="NOTA_DEL_ESTUDIANTE_HISTORIA_DE_PANAMÁ_019" msprop:Generator_RowChangedName="NOTA_DEL_ESTUDIANTE_HISTORIA_DE_PANAMÁ_019RowChanged" msprop:Generator_RowChangingName="NOTA_DEL_ESTUDIANTE_HISTORIA_DE_PANAMÁ_019RowChanging" msprop:Generator_TableClassName="NOTA_DEL_ESTUDIANTE_HISTORIA_DE_PANAMÁ_019DataTable" msprop:Generator_RowClassName="NOTA_DEL_ESTUDIANTE_HISTORIA_DE_PANAMÁ_019Row" msprop:Generator_TableVarName="tableNOTA_DEL_ESTUDIANTE_HISTORIA_DE_PANAMÁ_019" msprop:Generator_UserTableName="NOTA DEL ESTUDIANTE HISTORIA DE PANAMÁ 019">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NOTA_x0020_DEL_x0020_ESTUDIANTE_x0020_INTRODUCCIÓN_x0020_A_x0020_LOS_x0020_AMBIENTES_x0020_VIRTUALES_x0020_003" msprop:Generator_RowEvHandlerName="NOTA_DEL_ESTUDIANTE_INTRODUCCIÓN_A_LOS_AMBIENTES_VIRTUALES_003RowChangeEventHandler" msprop:Generator_RowDeletedName="NOTA_DEL_ESTUDIANTE_INTRODUCCIÓN_A_LOS_AMBIENTES_VIRTUALES_003RowDeleted" msprop:Generator_RowDeletingName="NOTA_DEL_ESTUDIANTE_INTRODUCCIÓN_A_LOS_AMBIENTES_VIRTUALES_003RowDeleting" msprop:Generator_RowEvArgName="NOTA_DEL_ESTUDIANTE_INTRODUCCIÓN_A_LOS_AMBIENTES_VIRTUALES_003RowChangeEvent" msprop:Generator_TablePropName="NOTA_DEL_ESTUDIANTE_INTRODUCCIÓN_A_LOS_AMBIENTES_VIRTUALES_003" msprop:Generator_RowChangedName="NOTA_DEL_ESTUDIANTE_INTRODUCCIÓN_A_LOS_AMBIENTES_VIRTUALES_003RowChanged" msprop:Generator_RowChangingName="NOTA_DEL_ESTUDIANTE_INTRODUCCIÓN_A_LOS_AMBIENTES_VIRTUALES_003RowChanging" msprop:Generator_TableClassName="NOTA_DEL_ESTUDIANTE_INTRODUCCIÓN_A_LOS_AMBIENTES_VIRTUALES_003DataTable" msprop:Generator_RowClassName="NOTA_DEL_ESTUDIANTE_INTRODUCCIÓN_A_LOS_AMBIENTES_VIRTUALES_003Row" msprop:Generator_TableVarName="tableNOTA_DEL_ESTUDIANTE_INTRODUCCIÓN_A_LOS_AMBIENTES_VIRTUALES_003" msprop:Generator_UserTableName="NOTA DEL ESTUDIANTE INTRODUCCIÓN A LOS AMBIENTES VIRTUALES 003">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NOTA_x0020_DEL_x0020_ESTUDIANTE_x0020_OFIMÁTICA_x0020_002" msprop:Generator_RowEvHandlerName="NOTA_DEL_ESTUDIANTE_OFIMÁTICA_002RowChangeEventHandler" msprop:Generator_RowDeletedName="NOTA_DEL_ESTUDIANTE_OFIMÁTICA_002RowDeleted" msprop:Generator_RowDeletingName="NOTA_DEL_ESTUDIANTE_OFIMÁTICA_002RowDeleting" msprop:Generator_RowEvArgName="NOTA_DEL_ESTUDIANTE_OFIMÁTICA_002RowChangeEvent" msprop:Generator_TablePropName="NOTA_DEL_ESTUDIANTE_OFIMÁTICA_002" msprop:Generator_RowChangedName="NOTA_DEL_ESTUDIANTE_OFIMÁTICA_002RowChanged" msprop:Generator_RowChangingName="NOTA_DEL_ESTUDIANTE_OFIMÁTICA_002RowChanging" msprop:Generator_TableClassName="NOTA_DEL_ESTUDIANTE_OFIMÁTICA_002DataTable" msprop:Generator_RowClassName="NOTA_DEL_ESTUDIANTE_OFIMÁTICA_002Row" msprop:Generator_TableVarName="tableNOTA_DEL_ESTUDIANTE_OFIMÁTICA_002" msprop:Generator_UserTableName="NOTA DEL ESTUDIANTE OFIMÁTICA 002">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NOTAS_x0020_ENTORNOS_x0020_VIRTUALES" msprop:Generator_RowEvHandlerName="NOTAS_ENTORNOS_VIRTUALESRowChangeEventHandler" msprop:Generator_RowDeletedName="NOTAS_ENTORNOS_VIRTUALESRowDeleted" msprop:Generator_RowDeletingName="NOTAS_ENTORNOS_VIRTUALESRowDeleting" msprop:Generator_RowEvArgName="NOTAS_ENTORNOS_VIRTUALESRowChangeEvent" msprop:Generator_TablePropName="NOTAS_ENTORNOS_VIRTUALES" msprop:Generator_RowChangedName="NOTAS_ENTORNOS_VIRTUALESRowChanged" msprop:Generator_RowChangingName="NOTAS_ENTORNOS_VIRTUALESRowChanging" msprop:Generator_TableClassName="NOTAS_ENTORNOS_VIRTUALESDataTable" msprop:Generator_RowClassName="NOTAS_ENTORNOS_VIRTUALESRow" msprop:Generator_TableVarName="tableNOTAS_ENTORNOS_VIRTUALES" msprop:Generator_UserTableName="NOTAS ENTORNOS VIRTUALES">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PROMEDIO_x0020_DE_x0020_LOS_x0020_ESTUDIANTES" msprop:Generator_RowEvHandlerName="PROMEDIO_DE_LOS_ESTUDIANTESRowChangeEventHandler" msprop:Generator_RowDeletedName="PROMEDIO_DE_LOS_ESTUDIANTESRowDeleted" msprop:Generator_RowDeletingName="PROMEDIO_DE_LOS_ESTUDIANTESRowDeleting" msprop:Generator_RowEvArgName="PROMEDIO_DE_LOS_ESTUDIANTESRowChangeEvent" msprop:Generator_TablePropName="PROMEDIO_DE_LOS_ESTUDIANTES" msprop:Generator_RowChangedName="PROMEDIO_DE_LOS_ESTUDIANTESRowChanged" msprop:Generator_RowChangingName="PROMEDIO_DE_LOS_ESTUDIANTESRowChanging" msprop:Generator_TableClassName="PROMEDIO_DE_LOS_ESTUDIANTESDataTable" msprop:Generator_RowClassName="PROMEDIO_DE_LOS_ESTUDIANTESRow" msprop:Generator_TableVarName="tablePROMEDIO_DE_LOS_ESTUDIANTES" msprop:Generator_UserTableName="PROMEDIO DE LOS ESTUDIANTES">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

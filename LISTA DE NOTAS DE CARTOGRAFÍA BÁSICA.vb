@@ -1,0 +1,3 @@
+﻿Public Class LISTA_DE_NOTAS_DE_CARTOGRAFÍA_BÁSICA
+
+End Class

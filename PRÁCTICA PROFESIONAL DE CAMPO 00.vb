@@ -1,0 +1,3 @@
+﻿Public Class PRÁCTICA_PROFESIONAL_DE_CAMPO_00
+
+End Class
